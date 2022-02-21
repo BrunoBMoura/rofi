@@ -34,7 +34,7 @@ configuration {
     background:                  @napolitan-black;
     background-color:            @napolitan-black;
     foreground:                  @napolitan-white;
-    border-color:                @napolitan-magenta;
+    border-color:                @napolitan-black;
     separatorcolor:              @border-color;
     scrollbar-handle:            @border-color;
 
@@ -42,6 +42,6 @@ configuration {
     normal-foreground:           @foreground;
     alternate-normal-background: @napolitan-black;
     alternate-normal-foreground: @foreground;
-    selected-normal-background:  @napolitan-green;
+    selected-normal-background:  @napolitan-magenta;
     selected-normal-foreground:  @foreground;
 }
