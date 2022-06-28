@@ -1,6 +1,7 @@
+// rofi -show filebrowser -sidebar-mode -hover-select -show-icons
 configuration {
-    modi: "window,run,ssh,drun";
-    font: "Hack 12";
+    modi: "drun,windowcd,filebrowser";
+    font: "JetBrains Mono 12";
     terminal: "kitty";
     timeout {
         action: "kb-cancel";
@@ -14,25 +15,18 @@ configuration {
 * {
     highlight:                 bold italic;
     scrollbar:                 true;
+    napolitan-background:      #1c1c1c;
     napolitan-black:           #0d0d0d;
-    napolitan-black-alt:       #737373;
-    napolitan-red:             #ff005f;
-    napolitan-red-alt:         #ff4d8e;
-    napolitan-green:           #5f875f;
-    napolitan-green-alt:       #87875f;
-    napolitan-yellow:          #ffaf5f;
-    napolitan-yellow-alt:      #ffaf87;
-    napolitan-blue:            #87afd7;
-    napolitan-blue-alt:        #87afff;
-    napolitan-magenta:         #d75f00;
-    napolitan-magenta-alt:     #d75f5f;
+    napolitan-red:             #d75f5f;
+    napolitan-green:           #afaf87;
+    napolitan-yellow:          #ffaf57;
+    napolitan-blue:            #5f87af;
+    napolitan-magenta:         #d7875f;
     napolitan-cyan:            #afd7d7;
-    napolitan-cyan-alt:        #d7d7ff;
     napolitan-white:           #ffffd7;
-    napolitan-white-alt:       #d7afaf;
 
     background:                  @napolitan-black;
-    background-color:            @napolitan-black;
+    background-color:            @napolitan-background;
     foreground:                  @napolitan-white;
     border-color:                @napolitan-black;
     separatorcolor:              @border-color;
@@ -40,8 +34,8 @@ configuration {
 
     normal-background:           @background;
     normal-foreground:           @foreground;
-    alternate-normal-background: @napolitan-black;
+    alternate-normal-background: @napolitan-background;
     alternate-normal-foreground: @foreground;
     selected-normal-background:  @napolitan-magenta;
-    selected-normal-foreground:  @foreground;
+    selected-normal-foreground:  @napolitan-black;
 }
