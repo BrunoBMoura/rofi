@@ -1,8 +1,10 @@
-// rofi -show filebrowser -sidebar-mode -hover-select -show-icons
+// rofi -show drun -sidebar-mode -hover-select -show-icons
 configuration {
-    modi: "drun,windowcd,filebrowser";
+    modi: "drun,windowcd";
     font: "JetBrains Mono 12";
     terminal: "kitty";
+    display-drun: "Launcher ";
+    display-windowcd: "Selector ";
     timeout {
         action: "kb-cancel";
         delay:  0;
@@ -29,8 +31,7 @@ configuration {
     background-color:            @napolitan-background;
     foreground:                  @napolitan-white;
     border-color:                @napolitan-black;
-    separatorcolor:              @border-color;
-    scrollbar-handle:            @border-color;
+    separatorcolor:              @napolitan-black;
 
     normal-background:           @background;
     normal-foreground:           @foreground;
@@ -38,4 +39,7 @@ configuration {
     alternate-normal-foreground: @foreground;
     selected-normal-background:  @napolitan-magenta;
     selected-normal-foreground:  @napolitan-black;
+
+    width:                       40%;
+    height:                      30%;
 }
