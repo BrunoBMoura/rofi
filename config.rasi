@@ -3,20 +3,18 @@ configuration {
     modi: "drun,windowcd";
     font: "JetBrains Mono 12";
     terminal: "kitty";
-    display-drun: "Launcher ";
-    display-windowcd: "Selector ";
+    display-drun: "";
+    drun-display-format:  "{name}";
+    drun-windowcd-format: "{name}";
     timeout {
         action: "kb-cancel";
         delay:  0;
     }
-    filebrowser {
-        directories-first: true;
-        sorting-method:    "name";
-    }
 }
+
+@theme "/dev/null"
+
 * {
-    highlight:                 bold italic;
-    scrollbar:                 true;
     napolitan-background:      #1c1c1c;
     napolitan-black:           #0d0d0d;
     napolitan-red:             #d75f5f;
@@ -27,18 +25,55 @@ configuration {
     napolitan-cyan:            #afd7d7;
     napolitan-white:           #ffffd7;
 
-    background:                  @napolitan-black;
-    background-color:            @napolitan-background;
-    foreground:                  @napolitan-white;
-    border-color:                @napolitan-black;
-    separatorcolor:              @border-color;
-    scrollbar-handle:            @border-color;
-
-    normal-background:           @background;
-    normal-foreground:           @foreground;
-    alternate-normal-background: @napolitan-background;
-    alternate-normal-foreground: @foreground;
-    selected-normal-background:  @napolitan-magenta;
-    selected-normal-foreground:  @napolitan-black;
+    highlight:                 bold italic;
+    background-color:          @napolitan-background;
+    text-color:                @napolitan-white;
+    border-color:              @napolitan-black;
 }
 
+window {
+  border: 1px;
+  width: 50%;
+  padding: 32px;
+}
+
+prompt {
+  background-color: @napolitan-magenta;
+  foreground-color: @napolitan-white;
+  enabled: false;
+  padding: 0.5% 32px 0% -0.5%;
+  font: "JetBrains Mono 12";
+}
+
+entry {
+  placeholder:       "";
+  background-color:  @napolitan-background;
+  placeholder-color: @napolitan-white;
+  expand:            true;
+  padding:           0.15% 0% 0% 0%;
+}
+
+inputbar {
+  children:         [ prompt, entry ];
+  background-color: @napolitan-background;
+  expand:           false;
+  margin:           0%;
+  padding:          15px;
+}
+
+listview {
+  columns: 1;
+  lines:   10;
+  cycle:   true;
+  dynamic: false;
+  layout:  vertical;
+}
+
+element-text, element-icon {
+  background-color: inherit;
+  text-color: inherit;
+}
+
+element selected {
+    background-color: @napolitan-magenta;
+}
