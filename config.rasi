@@ -15,15 +15,15 @@ configuration {
 @theme "/dev/null"
 
 * {
-    napolitan-background:      #1c1c1c;
-    napolitan-black:           #0d0d0d;
+    napolitan-background:      #1c1c1b;
+    napolitan-black:           #171717;
     napolitan-red:             #d75f5f;
     napolitan-green:           #afaf87;
-    napolitan-yellow:          #ffaf57;
-    napolitan-blue:            #5f87af;
-    napolitan-magenta:         #d7875f;
-    napolitan-cyan:            #afd7d7;
-    napolitan-white:           #ffffd7;
+    napolitan-yellow:          #dccb77;
+    napolitan-blue:            #4b878e;
+    napolitan-magenta:         #e58b69;
+    napolitan-cyan:            #84b2ac;
+    napolitan-white:           #ddd8b8;
 
     highlight:                 bold italic;
     background-color:          @napolitan-background;
