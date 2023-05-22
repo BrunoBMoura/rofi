@@ -15,14 +15,14 @@ configuration {
 @theme "/dev/null"
 
 * {
-    napolitan-background:      #1c1c1b;
-    napolitan-black:           #171717;
+    napolitan-black:           #1c1c1b;
+    napolitan-background:      #171717;
     napolitan-red:             #d75f5f;
-    napolitan-green:           #afaf87;
-    napolitan-yellow:          #dccb77;
+    napolitan-green:           #bdbb89;
+    napolitan-yellow:          #dbb278;
     napolitan-blue:            #4b878e;
-    napolitan-magenta:         #e58b69;
-    napolitan-cyan:            #84b2ac;
+    napolitan-magenta:         #d89879;
+    napolitan-cyan:            #99a59d;
     napolitan-white:           #ddd8b8;
 
     highlight:                 bold italic;
