@@ -15,8 +15,8 @@ configuration {
 @theme "/dev/null"
 
 * {
-    napolitan-black:           #1c1c1b;
-    napolitan-background:      #171717;
+    napolitan-black:           #171717;
+    napolitan-background:      #1d1c19;
     napolitan-red:             #d75f5f;
     napolitan-green:           #bdbb89;
     napolitan-yellow:          #dbb278;
@@ -24,6 +24,7 @@ configuration {
     napolitan-magenta:         #d89879;
     napolitan-cyan:            #99a59d;
     napolitan-white:           #ddd8b8;
+    napolitan-grey:            #303030;
 
     highlight:                 bold italic;
     background-color:          @napolitan-background;
@@ -35,6 +36,7 @@ window {
   border: 1px;
   width: 50%;
   padding: 32px;
+  border-color:              @napolitan-grey;
 }
 
 prompt {
@@ -76,4 +78,5 @@ element-text, element-icon {
 
 element selected {
     background-color: @napolitan-magenta;
+    text-color: @napolitan-black;
 }
