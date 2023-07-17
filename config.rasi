@@ -15,33 +15,33 @@ configuration {
 @theme "/dev/null"
 
 * {
-    napolitan-black:           #171717;
-    napolitan-background:      #1d1c19;
-    napolitan-red:             #d75f5f;
-    napolitan-green:           #bdbb89;
-    napolitan-yellow:          #dbb278;
-    napolitan-blue:            #4b878e;
-    napolitan-magenta:         #d89879;
-    napolitan-cyan:            #99a59d;
-    napolitan-white:           #ddd8b8;
-    napolitan-grey:            #303030;
+    black:           #16161D;
+    background:      #181616;
+    red:             #C4746E;
+    green:           #87A987;
+    yellow:          #C4B28A;
+    blue:            #8BA4B0;
+    magenta:         #A292A3;
+    cyan:            #8EA4A2;
+    white:           #C5C9C5;
+    grey:            #282727;
 
     highlight:                 bold italic;
-    background-color:          @napolitan-background;
-    text-color:                @napolitan-white;
-    border-color:              @napolitan-black;
+    background-color:          @background;
+    text-color:                @white;
+    border-color:              @black;
 }
 
 window {
   border: 1px;
   width: 50%;
   padding: 32px;
-  border-color:              @napolitan-grey;
+  border-color:              @grey;
 }
 
 prompt {
-  background-color: @napolitan-magenta;
-  foreground-color: @napolitan-white;
+  background-color: @magenta;
+  foreground-color: @white;
   enabled: false;
   padding: 0.5% 32px 0% -0.5%;
   font: "JetBrains Mono 12";
@@ -49,15 +49,15 @@ prompt {
 
 entry {
   placeholder:       "";
-  background-color:  @napolitan-background;
-  placeholder-color: @napolitan-white;
+  background-color:  @background;
+  placeholder-color: @white;
   expand:            true;
   padding:           0.15% 0% 0% 0%;
 }
 
 inputbar {
   children:         [ prompt, entry ];
-  background-color: @napolitan-background;
+  background-color: @background;
   expand:           false;
   margin:           0%;
   padding:          15px;
@@ -77,6 +77,6 @@ element-text, element-icon {
 }
 
 element selected {
-    background-color: @napolitan-magenta;
-    text-color: @napolitan-black;
+    background-color: @magenta;
+    text-color: @black;
 }
