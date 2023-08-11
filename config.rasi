@@ -25,6 +25,7 @@ configuration {
     cyan:            #8EA4A2;
     white:           #C5C9C5;
     grey:            #282727;
+    border:          #2D4F67;
 
     highlight:                 bold italic;
     background-color:          @background;
@@ -36,7 +37,7 @@ window {
   border: 1px;
   width: 50%;
   padding: 32px;
-  border-color:              @grey;
+  border-color:              @border;
 }
 
 prompt {
@@ -77,6 +78,6 @@ element-text, element-icon {
 }
 
 element selected {
-    background-color: @magenta;
+    background-color: @border;
     text-color: @black;
 }
