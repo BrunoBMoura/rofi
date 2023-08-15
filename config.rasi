@@ -25,19 +25,19 @@ configuration {
     cyan:            #8EA4A2;
     white:           #C5C9C5;
     grey:            #282727;
-    border:          #2D4F67;
+    border:          #8992a7;
 
     highlight:                 bold italic;
     background-color:          @background;
-    text-color:                @white;
-    border-color:              @black;
+    text-color:                @cyan;
+    border-color:              @cyan;
 }
 
 window {
   border: 1px;
   width: 50%;
   padding: 32px;
-  border-color:              @border;
+  border-color:              @border-color;
 }
 
 prompt {
@@ -78,6 +78,6 @@ element-text, element-icon {
 }
 
 element selected {
-    background-color: @border;
+    background-color: @border-color;
     text-color: @black;
 }
