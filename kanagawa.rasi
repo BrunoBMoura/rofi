@@ -1,0 +1,18 @@
+* {
+    black:           #16161D;
+    background:      #181616;
+    red:             #C4746E;
+    green:           #87A987;
+    yellow:          #C4B28A;
+    blue:            #8BA4B0;
+    magenta:         #A292A3;
+    cyan:            #8EA4A2;
+    white:           #C5C9C5;
+    grey:            #282727;
+    border:          #8992a7;
+
+    highlight:                 bold italic;
+    background-color:          @background;
+    text-color:                @cyan;
+    border-color:              @cyan;
+}
