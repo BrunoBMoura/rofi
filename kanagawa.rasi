@@ -13,6 +13,6 @@
 
     highlight:                 bold italic;
     background-color:          @background;
-    text-color:                @cyan;
-    border-color:              @cyan;
+    text-color:                @white;
+    border-color:              @white;
 }
