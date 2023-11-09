@@ -17,6 +17,8 @@ configuration {
 window {
   width: 30%;
   padding: 32px;
+  border: 1px;
+  border-color: @grey;
 }
 
 prompt {
