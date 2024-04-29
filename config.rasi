@@ -1,4 +1,4 @@
-@theme "kanagawa.rasi"
+@theme "plastlin.rasi"
 
 // rofi -show filebrowser -sidebar-mode -hover-select -show-icons
 configuration {
